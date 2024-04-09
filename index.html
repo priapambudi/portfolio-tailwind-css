@@ -42,50 +42,66 @@
 
             <nav
               id="nav-menu"
-              class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none"
+              class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-dark dark:shadow-slate-700 lg:dark:bg-transparent"
             >
               <ul class="block lg:flex">
                 <li class="group">
                   <a
                     href="#home"
-                    class="flex py-2 mx-8 text-base text-dark group-hover:text-primary"
+                    class="flex py-2 mx-8 text-base text-dark group-hover:text-primary dark:text-slate-300"
                     >Home</a
                   >
                 </li>
                 <li class="group">
                   <a
                     href="#about"
-                    class="flex py-2 mx-8 text-base text-dark group-hover:text-primary"
+                    class="flex py-2 mx-8 text-base text-dark group-hover:text-primary dark:text-slate-300"
                     >About</a
                   >
                 </li>
                 <li class="group">
                   <a
                     href="#portfolio"
-                    class="flex py-2 mx-8 text-base text-dark group-hover:text-primary"
+                    class="flex py-2 mx-8 text-base text-dark group-hover:text-primary dark:text-slate-300"
                     >Portfolio</a
                   >
                 </li>
                 <li class="group">
                   <a
                     href="#clients"
-                    class="flex py-2 mx-8 text-base text-dark group-hover:text-primary"
+                    class="flex py-2 mx-8 text-base text-dark group-hover:text-primary dark:text-slate-300"
                     >Clients</a
                   >
                 </li>
                 <li class="group">
                   <a
                     href="#blog"
-                    class="flex py-2 mx-8 text-base text-dark group-hover:text-primary"
+                    class="flex py-2 mx-8 text-base text-dark group-hover:text-primary dark:text-slate-300"
                     >Blog</a
                   >
                 </li>
                 <li class="group">
                   <a
                     href="#contact"
-                    class="flex py-2 mx-8 text-base text-dark group-hover:text-primary"
+                    class="flex py-2 mx-8 text-base text-dark group-hover:text-primary dark:text-slate-300"
                     >Contact</a
                   >
+                </li>
+                <li class="flex items-center pl-8 mt-3 lg:mt-0">
+                  <div class="flex">
+                    <span class="mr-2 text-sm text-slate-500">Light</span>
+                    <input type="checkbox" class="hidden" id="dark-toggle" />
+                    <label for="dark-toggle">
+                      <div
+                        class="flex items-center h-5 p-1 rounded-full cursor-pointer w-9 bg-slate-500"
+                      >
+                        <div
+                          class="w-4 h-4 transition duration-300 ease-in-out bg-white rounded-full toggle-circle"
+                        ></div>
+                      </div>
+                    </label>
+                    <span class="ml-2 text-sm text-slate-500">Dark</span>
+                  </div>
                 </li>
               </ul>
             </nav>
@@ -96,17 +112,20 @@
     <!-- Header end -->
 
     <!-- Hero section start -->
-    <section id="home" class="pt-36">
+    <section id="home" class="pt-28 dark:bg-dark">
       <div class="container">
         <div class="flex flex-wrap xl:w-10/12 xl:mx-auto">
           <div class="self-center w-full px-4 lg:w-1/2">
             <h1 class="text-base font-semibold text-primary md:text-xl">
               Hi Everyone 👋,
-              <span class="block text-4xl font-bold text-dark lg:text-5xl"
+              <span
+                class="block text-4xl font-bold text-dark lg:text-5xl dark:text-slate-300"
                 >I'm Pria Pambudi</span
               >
             </h1>
-            <h2 class="mb-5 text-lg font-medium text-secondary lg:text-2xl">
+            <h2
+              class="mb-5 text-lg font-medium text-secondary lg:text-2xl dark:text-slate-300"
+            >
               Front-End Web Enthusiast
             </h2>
             <p class="mb-10 font-medium text-secondary">
@@ -121,9 +140,13 @@
           </div>
           <div class="self-end w-full px-4 lg:w-1/2">
             <div class="relative mt-10 lg:mt-0 lg:right-0">
-              <img src="dist/img/1.png" alt="" class="max-w-full mx-auto" />
+              <img
+                src="dist/img/1.png"
+                alt=""
+                class="relative z-10 max-w-full mx-auto"
+              />
               <span
-                class="absolute -translate-x-1/2 -top-0 -z-10 left-1/2 md:scale-125"
+                class="absolute -translate-x-1/2 -top-0 left-1/2 md:scale-125"
               >
                 <svg
                   width="300"
@@ -146,14 +169,16 @@
     <!-- Hero section end -->
 
     <!-- About Section start -->
-    <section id="about" class="pb-32 pt-36">
+    <section id="about" class="pb-32 pt-36 dark:bg-dark">
       <div class="container">
         <div class="flex flex-wrap xl:w-10/12 xl:mx-auto">
           <div class="w-full px-4 mb-10 lg:w-1/2">
             <h4 class="mb-3 text-lg font-bold uppercase text-primary">
               About Me
             </h4>
-            <h2 class="mb-5 text-3xl font-bold text-dark lg:text-3xl">
+            <h2
+              class="mb-5 text-3xl font-bold text-dark lg:text-3xl dark:text-slate-300"
+            >
               Front-End Web Developer
             </h2>
             <p class="text-base font-medium text-secondary lg:text-lg">
@@ -164,7 +189,7 @@
 
           <div class="w-full px-4 lg:w-1/2">
             <h3
-              class="mb-4 text-2xl font-semibold text-dark lg:text-3xl lg:pt-10"
+              class="mb-4 text-2xl font-semibold text-dark lg:text-3xl lg:pt-10 dark:text-slate-300"
             >
               Let's be Friend
             </h3>
@@ -177,7 +202,7 @@
               <a
                 href="https://youtube.com"
                 target="_blank"
-                class="flex items-center justify-center mr-3 border rounded-full w-9 h-9 border-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+                class="flex items-center justify-center mr-3 border rounded-full w-9 h-9 border-slate-300 dark:text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
               >
                 <svg
                   class="fill-current"
@@ -195,7 +220,7 @@
               <a
                 href="https://instagram.com"
                 target="_blank"
-                class="flex items-center justify-center mr-3 border rounded-full w-9 h-9 border-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+                class="flex items-center justify-center mr-3 border rounded-full dark:text-slate-300 w-9 h-9 border-slate-300 hover:border-primary hover:bg-primary hover:text-white"
               >
                 <svg
                   class="fill-current"
@@ -213,7 +238,7 @@
               <a
                 href="https://twitter.com"
                 target="_blank"
-                class="flex items-center justify-center mr-3 border rounded-full w-9 h-9 border-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+                class="flex items-center justify-center mr-3 border rounded-full dark:text-slate-300 w-9 h-9 border-slate-300 hover:border-primary hover:bg-primary hover:text-white"
               >
                 <svg
                   class="fill-current"
@@ -231,7 +256,7 @@
               <a
                 href="https://github.com"
                 target="_blank"
-                class="flex items-center justify-center mr-3 border rounded-full w-9 h-9 border-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+                class="flex items-center justify-center mr-3 border rounded-full dark:text-slate-300 w-9 h-9 border-slate-300 hover:border-primary hover:bg-primary hover:text-white"
               >
                 <svg
                   class="fill-current"
@@ -254,13 +279,13 @@
     <!-- About Section end -->
 
     <!-- Porfolio section start -->
-    <section id="portfolio" class="pb-16 pt-36 bg-slate-100">
+    <section id="portfolio" class="pb-16 pt-36 bg-slate-100 dark:bg-slate-800">
       <div class="container">
         <div class="w-full px-4">
           <div class="max-w-xl mx-auto mb-16 text-center">
             <h4 class="mb-2 text-lg font-semibold text-primary">Portfolio</h4>
             <h2
-              class="mb-4 text-3xl font-bold text-dark sm:text-4xl lg:text-5xl"
+              class="mb-4 text-3xl font-bold text-dark sm:text-4xl lg:text-5xl dark:text-slate-300"
             >
               Newest Project
             </h2>
@@ -279,7 +304,9 @@
             <div class="overflow-hidden rounded-md shadow-md">
               <img src="dist/img/portfolio/1.jpg" alt="" width="w-full" />
             </div>
-            <h3 class="mt-5 mb-3 text-xl font-semibold text-dark">
+            <h3
+              class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-slate-300"
+            >
               Database Architecture
             </h3>
             <p class="text-base font-medium text-secondary">
@@ -291,7 +318,9 @@
             <div class="overflow-hidden rounded-md shadow-md">
               <img src="dist/img/portfolio/2.jpg" alt="" width="w-full" />
             </div>
-            <h3 class="mt-5 mb-3 text-xl font-semibold text-dark">
+            <h3
+              class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-slate-300"
+            >
               Desktop Application
             </h3>
             <p class="text-base font-medium text-secondary">
@@ -303,7 +332,9 @@
             <div class="overflow-hidden rounded-md shadow-md">
               <img src="dist/img/portfolio/3.jpg" alt="" width="w-full" />
             </div>
-            <h3 class="mt-5 mb-3 text-xl font-semibold text-dark">
+            <h3
+              class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-slate-300"
+            >
               Website Application
             </h3>
             <p class="text-base font-medium text-secondary">
@@ -315,7 +346,9 @@
             <div class="overflow-hidden rounded-md shadow-md">
               <img src="dist/img/portfolio/4.jpg" alt="" width="w-full" />
             </div>
-            <h3 class="mt-5 mb-3 text-xl font-semibold text-dark">
+            <h3
+              class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-slate-300"
+            >
               AI Development
             </h3>
             <p class="text-base font-medium text-secondary">
@@ -329,13 +362,13 @@
     <!-- Porfolio section end -->
 
     <!-- Clients section start -->
-    <section id="clients" class="pb-32 pt-36 bg-slate-800">
+    <section id="clients" class="pb-32 pt-36 bg-slate-800 dark:bg-slate-300">
       <div class="container">
         <div class="w-full px-4">
           <div class="mx-auto mb-16 text-center">
             <h4 class="mb-2 text-lg font-semibold text-primary">Clients</h4>
             <h2
-              class="mb-4 text-3xl font-bold text-white sm:text-4xl lg:text-5xl"
+              class="mb-4 text-3xl font-bold text-white sm:text-4xl lg:text-5xl dark:text-dark"
             >
               Recent Collaboration
             </h2>
@@ -453,13 +486,13 @@
     <!-- Clients section end -->
 
     <!-- Blog section start -->
-    <section id="blog" class="pb-32 pt-36 bg-slate-100">
+    <section id="blog" class="pb-32 pt-36 bg-slate-100 dark:bg-dark">
       <div class="container">
         <div class="w-full px-4">
           <div class="max-w-xl mx-auto mb-16 text-center">
             <h4 class="mb-2 max-w-[500px]bold text-w-20 text-primary">Blog</h4>
             <h2
-              class="mb-4 text-3xl font-bold text-dark sm:text-4xl lg:text-5xl"
+              class="mb-4 text-3xl font-bold text-dark sm:text-4xl lg:text-5xl dark:text-slate-300"
             >
               Newest Articles
             </h2>
@@ -473,7 +506,7 @@
         <div class="flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
           <div class="w-full px-4 md:w-1/2 xl:w-1/3">
             <div
-              class="mb-10 overflow-hidden bg-white shadow-lg rounded-xl hover:scale-105"
+              class="mb-10 overflow-hidden bg-white shadow-lg rounded-xl hover:scale-105 dark:bg-slate-800"
             >
               <img
                 src="https://source.unsplash.com/360x200?computer"
@@ -484,7 +517,7 @@
                 <h3>
                   <a
                     href=""
-                    class="block mb-3 text-xl font-semibold truncate text-dark hover:text-primary"
+                    class="block mb-3 text-xl font-semibold truncate text-dark hover:text-primary dark:text-slate-300"
                     >How to be a Good Programmer</a
                   >
                 </h3>
@@ -502,7 +535,7 @@
           </div>
           <div class="w-full px-4 md:w-1/2 xl:w-1/3">
             <div
-              class="mb-10 overflow-hidden bg-white shadow-lg rounded-xl hover:scale-105"
+              class="mb-10 overflow-hidden bg-white shadow-lg rounded-xl hover:scale-105 dark:bg-slate-800"
             >
               <img
                 src="https://source.unsplash.com/360x200?html"
@@ -513,7 +546,7 @@
                 <h3>
                   <a
                     href=""
-                    class="block mb-3 text-xl font-semibold truncate text-dark hover:text-primary"
+                    class="block mb-3 text-xl font-semibold truncate text-dark hover:text-primary dark:text-slate-300"
                     >Tips Learning HTML and CSS</a
                   >
                 </h3>
@@ -531,7 +564,7 @@
           </div>
           <div class="w-full px-4 md:w-1/2 xl:w-1/3">
             <div
-              class="mb-10 overflow-hidden bg-white shadow-lg rounded-xl hover:scale-105"
+              class="mb-10 overflow-hidden bg-white shadow-lg rounded-xl hover:scale-105 dark:bg-slate-800"
             >
               <img
                 src="https://source.unsplash.com/360x200?css"
@@ -542,7 +575,7 @@
                 <h3>
                   <a
                     href=""
-                    class="block mb-3 text-xl font-semibold truncate text-dark hover:text-primary"
+                    class="block mb-3 text-xl font-semibold truncate text-dark hover:text-primary dark:text-slate-300"
                     >What is Tailwind CSS?</a
                   >
                 </h3>
@@ -564,13 +597,13 @@
     <!-- Blog section end -->
 
     <!-- Contact section start -->
-    <section id="contact" class="pb-32 pt-36">
+    <section id="contact" class="pb-32 pt-36 dark:bg-slate-800">
       <div class="container">
         <div class="w-full px-4">
           <div class="max-w-xl mx-auto mb-16 text-center">
             <h4 class="mb-2 text-lg font-semibold text-primary">Contact</h4>
             <h2
-              class="mb-4 text-3xl font-bold text-dark sm:text-4xl lg:text-5xl"
+              class="mb-4 text-3xl font-bold text-dark sm:text-4xl lg:text-5xl dark:text-slate-300"
             >
               Reach Me
             </h2>
@@ -590,7 +623,7 @@
               <input
                 type="text"
                 id="name"
-                class="w-full p-3 rounded-md bg-slate-200 text-dark focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"
+                class="w-full p-3 rounded-md bg-slate-200 dark:bg-slate-300 text-dark focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"
               />
             </div>
             <div class="w-full px-4 mb-8">
@@ -600,7 +633,7 @@
               <input
                 type="email"
                 id="email"
-                class="w-full p-3 rounded-md bg-slate-200 text-dark focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"
+                class="w-full p-3 rounded-md bg-slate-200 dark:bg-slate-300 text-dark focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"
               />
             </div>
             <div class="w-full px-4 mb-8">
@@ -610,7 +643,7 @@
               <textarea
                 type=""
                 id="message"
-                class="w-full h-32 p-3 rounded-md bg-slate-200 text-dark focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"
+                class="w-full h-32 p-3 rounded-md bg-slate-200 dark:bg-slate-300 text-dark focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"
               >
               </textarea>
             </div>
